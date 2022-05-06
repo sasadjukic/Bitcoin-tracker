@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bitcoin Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/bitcoinStyles.css') }}" />
+  </head>
+  <body>
+    <div class="logo">
+      <!-- logo from https://bitcoin.org/ -->
+      <img src="{{ url_for('static', filename='images/Bitcoin.png') }}" alt="bitcoin image" />
+    </div>
+    <p class="input-prompt">Choose desired currency</p>
+    <div class="container">
+      <select id='selection'>
+        <option class="currency" value="USD">USD</option>
+        <option class="currency" value="GBP">GBP</option>
+        <option class="currency" value="EUR">EUR</option>
+      </select>
+      <button onclick="getValue()" class="btn" type="submit">SUBMIT</button>
+    </div>
+      <p id='time'></p>
+      <p id='conversion'></p>
+    </div>
+
+    <script src="{{ url_for('static', filename='javascript/bitcoinScript.js') }}"></script>
+  </body>
+</html>

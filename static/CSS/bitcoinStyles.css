@@ -1,0 +1,36 @@
+
+body {
+  background-color: blue;
+  text-align: center;
+}
+
+.logo {
+  margin-top: 5%;
+  filter: brightness(100%);
+  filter: drop-shadow(5px 5px 5px black);
+}
+
+p {
+  color: #FF9415;
+  font-family: 'Rubik';
+  font-weight: bold;
+}
+
+.btn {
+  background-color: #FF9415;
+  color: blue;
+  font-family: 'Rubik';
+  font-weight: bold;
+  border-radius: 5px;
+  border-color: blue;
+  padding: 5px 10px;
+}
+
+.currency {
+  color: blue;
+}
+
+#selection {
+  padding: 4px 8px;
+  color: blue;
+}
