@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='CSS/bitcoinStyles.css') }}" />
+    <script src="{{ url_for('static', filename='javascript/bitcoinScript.js') }}" defer></script>
   </head>
   <body>
     <div class="logo">
@@ -24,10 +25,9 @@
       </select>
       <button onclick="getValue()" class="btn" type="submit">SUBMIT</button>
     </div>
+    <div class="display-converter">
       <p id='time'></p>
       <p id='conversion'></p>
     </div>
-
-    <script src="{{ url_for('static', filename='javascript/bitcoinScript.js') }}"></script>
   </body>
 </html>
