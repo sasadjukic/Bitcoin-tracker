@@ -1,6 +1,6 @@
 # Bitcoin-tracker
 ABOUT
-Simple app to track Bitcoin price with Python and Flask
+- Simple app to track Bitcoin price with Python and Flask
 
 FEATURES
 - Choose currency between USD, GBP, EUR
